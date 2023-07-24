@@ -101,7 +101,7 @@ class DetalleContactoPage extends StatelessWidget {
                   ),
                   child: Column(children: [
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         IconButton(
                           icon: const Icon(Icons.call, size: 30),
@@ -117,19 +117,22 @@ class DetalleContactoPage extends StatelessWidget {
                             print(
                                 'Haciendo llamada a ${contacto.numeroTelefono}');
                           },
-                          child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  contacto.numeroTelefono,
-                                  style: const TextStyle(fontSize: 24),
-                                ),
-                                const Text(
-                                  'Celular',
-                                  style: TextStyle(
-                                      fontSize: 16, color: Colors.grey),
-                                ),
-                              ]),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    '${contacto.numeroTelefono}     ',
+                                    style: const TextStyle(fontSize: 20),
+                                  ),
+                                  const Text(
+                                    'Celular',
+                                    style: TextStyle(
+                                        fontSize: 12, color: Colors.grey),
+                                  ),
+                                ]),
+                          ),
                         ),
                         Row(
                           children: [
