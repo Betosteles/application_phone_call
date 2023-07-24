@@ -10,7 +10,14 @@ class DetalleContactoPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Detalle de Contacto'),
+        title: const Text(''),
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
+        elevation: 0
+        
+
+
+
       ),
       body: Scrollbar(
         child: SingleChildScrollView(
@@ -24,7 +31,7 @@ class DetalleContactoPage extends StatelessWidget {
                 radius: 60, // Tamaño del círculo
                 child: Text(
                   contacto.nombre.substring(0, 1),
-                  style: const TextStyle(color: Colors.white, fontSize: 45),
+                  style: const TextStyle(color: Colors.white, fontSize: 90),
                 ),
               ),
 

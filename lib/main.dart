@@ -1,3 +1,4 @@
+import 'package:application_phone_call/src/constantes/routes.dart';
 import 'package:application_phone_call/src/pages/detalle_contacto_page.dart';
 import 'package:flutter/material.dart';
 import '/src/providers/lista_contactos.dart';
@@ -38,3 +39,15 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+// @override
+// Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Material App',
+//       theme: ThemeData(useMaterial3: true),
+//       home:  DetalleContactoPage(contacto: listaContactos[0]),
+//       initialRoute: MyRoutes.detalleContacto.name,
+//       routes: routes,
+//     );
+//   }
+// }
